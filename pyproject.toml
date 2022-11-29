@@ -1,0 +1,35 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "googledrive-files"
+dynamic = ["version"]
+authors = [
+  { name="skitschy", email="s1kitschy@gmail.com" },
+]
+description = "Simple Google Drive API wrapper"
+readme = "README.md"
+requires-python = ">=3.5"
+dependencies = [
+  "google-api-python-client",  
+]
+classifiers = [
+  "License :: OSI Approved :: MIT License",
+  "Intended Audience :: Developers",
+  "Operating System :: OS Independent",
+  "Programming Language :: Python",
+  "Programming Language :: Python :: 3",
+  "Programming Language :: Python :: 3.5",
+  "Programming Language :: Python :: 3.6",
+  "Programming Language :: Python :: 3.7",
+  "Programming Language :: Python :: 3.8",
+  "Programming Language :: Python :: 3.9",
+]
+
+[project.urls]
+"Homepage" = "https://github.com/skitschy/pyGoogleDriveFiles"
+"Documentation" = "https://googledrive-files.readthedocs.io/"
+
+[tool.setuptools.dynamic]
+version = {attr = "googledrive.__version__"}
